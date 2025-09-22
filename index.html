@@ -1,516 +1,225 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lola Villalba - Currículum</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
-    <style>
-        @font-face {
-            font-family: 'NotoSerifCJKsc';
-            src: url('https://assets-persist.lovart.ai/agent-static-assets/NotoSerifCJKsc-Regular.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        @font-face {
-            font-family: 'NotoSerifCJKsc';
-            src: url('https://assets-persist.lovart.ai/agent-static-assets/NotoSerifCJKsc-SemiBold.otf') format('opentype');
-            font-weight: 600;
-            font-style: normal;
-        }
-        
-        @font-face {
-            font-family: 'AlibabaSans';
-            src: url('https://assets-persist.lovart.ai/agent-static-assets/AlibabaSans-Regular.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        @font-face {
-            font-family: 'AlibabaSans';
-            src: url('https://assets-persist.lovart.ai/agent-static-assets/AlibabaSans-Medium.otf') format('opentype');
-            font-weight: 500;
-            font-style: normal;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lola Villalba · Serenidad Creativa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --primary: #a9865b;
+      --text: #2e2e2e;
+      --accent: #d4c6b0;
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
 
-        body {
-            font-family: 'AlibabaSans', sans-serif;
-            color: #333;
-            background-image: url('https://assets-persist.lovart.ai/agent_images/6f83aefd-096b-4ee3-8044-728609d17a81.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            width: 1080px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
+    header {
+      background: url('pantano-la-granja.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
 
-        .container {
-            width: 100%;
-            padding: 40px;
-        }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+      margin: 0;
+      text-shadow: 1px 1px 2px #00000090;
+    }
 
-        header {
-            text-align: center;
-            padding: 40px 0;
-            position: relative;
-        }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-style: italic;
+      text-shadow: 1px 1px 2px #00000060;
+    }
 
-        .name {
-            font-family: 'NotoSerifCJKsc', serif;
-            font-size: 52px;
-            font-weight: 600;
-            color: #5D4037;
-            margin-bottom: 10px;
-        }
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-        .title {
-            font-size: 20px;
-            font-weight: 500;
-            color: #8D6E63;
-            margin-bottom: 25px;
-        }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--primary);
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 5px;
+    }
 
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-        }
+    .timeline {
+      position: relative;
+      margin: 40px 0;
+      padding-left: 30px;
+    }
 
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 16px;
-        }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--primary);
+    }
 
-        .contact-item i {
-            color: #D7CCC8;
-            font-size: 18px;
-        }
+    .timeline-item {
+      margin-bottom: 30px;
+      position: relative;
+    }
 
-        nav {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-bottom: 40px;
-        }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 6px;
+      width: 14px;
+      height: 14px;
+      background: var(--primary);
+      border-radius: 50%;
+    }
 
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap: 30px;
-        }
+    .timeline-item h3 {
+      margin: 0;
+      font-weight: 600;
+    }
 
-        .nav-links a {
-            text-decoration: none;
-            color: #5D4037;
-            font-weight: 500;
-            font-size: 16px;
-            padding: 5px 10px;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
+    .skills, .contact, .quote {
+      background: white;
+      padding: 20px;
+      border-left: 4px solid var(--primary);
+      margin: 20px 0;
+    }
 
-        .nav-links a:hover {
-            background-color: rgba(216, 174, 149, 0.2);
-            color: #A1887F;
-        }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: var(--accent);
+      font-size: 0.9em;
+    }
 
-        .timeline {
-            position: relative;
-            padding: 40px 0;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            width: 3px;
-            background-color: #D8AE95;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .timeline-item {
-            margin-bottom: 60px;
-            position: relative;
-        }
-
-        .timeline-icon {
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: white;
-            border: 3px solid #D8AE95;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-            box-shadow: 0 0 15px rgba(216, 174, 149, 0.3);
-        }
-
-        .timeline-icon i {
-            font-size: 24px;
-            color: #D8AE95;
-        }
-
-        .timeline-content {
-            position: relative;
-            width: 45%;
-            padding: 25px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
-        }
-
-        .left {
-            left: 0;
-        }
-
-        .right {
-            left: 55%;
-        }
-
-        .timeline-title {
-            font-family: 'NotoSerifCJKsc', serif;
-            font-size: 24px;
-            font-weight: 600;
-            color: #5D4037;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .timeline-title i {
-            color: #D8AE95;
-            font-size: 22px;
-        }
-
-        .timeline-subtitle {
-            font-size: 18px;
-            font-weight: 500;
-            color: #8D6E63;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #EFEBE9;
-            padding-bottom: 8px;
-        }
-
-        .timeline-text {
-            font-size: 16px;
-            color: #5D4037;
-        }
-
-        .timeline-text ul {
-            padding-left: 20px;
-            margin-top: 10px;
-        }
-
-        .timeline-text li {
-            margin-bottom: 5px;
-        }
-
-        .quote-section {
-            text-align: center;
-            padding: 60px 0;
-            margin-top: 40px;
-        }
-
-        .quote {
-            font-family: 'NotoSerifCJKsc', serif;
-            font-size: 28px;
-            font-weight: 500;
-            color: #5D4037;
-            font-style: italic;
-            max-width: 700px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .quote::before, .quote::after {
-            content: '"';
-            font-size: 48px;
-            color: #D8AE95;
-            position: absolute;
-            opacity: 0.5;
-        }
-
-        .quote::before {
-            left: -30px;
-            top: -20px;
-        }
-
-        .quote::after {
-            right: -30px;
-            bottom: -40px;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 40px;
-        }
-
-        .social-links a {
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            color: #8D6E63;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: #D8AE95;
-        }
-
-        .social-links i {
-            font-size: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            color: #8D6E63;
-            font-size: 14px;
-        }
-
-        .skill-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .skill-tag {
-            background-color: rgba(216, 174, 149, 0.1);
-            border: 1px solid rgba(216, 174, 149, 0.3);
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 14px;
-            color: #8D6E63;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                width: 100%;
-            }
-            
-            .timeline::before {
-                left: 30px;
-            }
-            
-            .timeline-icon {
-                left: 30px;
-                transform: translateX(-50%);
-            }
-            
-            .timeline-content {
-                width: calc(100% - 80px);
-                left: 80px;
-            }
-            
-            .right, .left {
-                left: 0;
-            }
-        }
-    </style>
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      header p { font-size: 1em; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 class="name">Lola Villalba</h1>
-            <p class="title">Técnico en Turismo · Relaciones Públicas · Docente · Experta en Bienestar Integral</p>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="ri-mail-line"></i>
-                    <span>lolavillalba.ufv@gmail.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="ri-phone-line"></i>
-                    <span>656 948 470</span>
-                </div>
-                <div class="contact-item">
-                    <i class="ri-map-pin-line"></i>
-                    <span>Castilla y León, España</span>
-                </div>
-            </div>
-        </header>
-        
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#formacion">Formación</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#estilo">Estilo Personal</a></li>
-            </ul>
-        </nav>
-        
-        <div class="timeline">
-            <div class="timeline-item" id="perfil">
-                <div class="timeline-icon">
-                    <i class="ri-user-heart-line"></i>
-                </div>
-                <div class="timeline-content left">
-                    <h2 class="timeline-title"><i class="ri-sparkle-line"></i>Perfil Profesional</h2>
-                    <p class="timeline-text">
-                        Profesional polifacética con más de 20 años de experiencia en turismo, marketing, docencia, museografía y bienestar integral. Combina una visión creativa y estratégica con una profunda orientación al desarrollo humano y empresarial. Su enfoque multidisciplinar le permite crear experiencias transformadoras en entornos educativos, corporativos y culturales.
-                        <br><br>
-                        Apasionada de la innovación serena, los equipos eficientes y el arte de crear impacto positivo desde la calma y la autenticidad.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="timeline-item" id="formacion">
-                <div class="timeline-icon">
-                    <i class="ri-graduation-cap-line"></i>
-                </div>
-                <div class="timeline-content right">
-                    <h2 class="timeline-title"><i class="ri-graduation-cap-line"></i>Formación Académica</h2>
-                    <p class="timeline-text">
-                        <strong>2025</strong> · Técnico en Promoción Turística y Promoción Local<br>
-                        <strong>2015</strong> · Certificación en Coaching Social – Universidad San Pablo CEU
-                    </p>
-                    
-                    <h3 class="timeline-subtitle">Especializaciones</h3>
-                    <ul class="timeline-text">
-                        <li>Museografía aplicada (Carmen Luccini)</li>
-                        <li>Profesora de Yoga y Meditación</li>
-                        <li>Reflexología Podal y Alimentación Consciente</li>
-                        <li>Mindfulness para empresas y entornos educativos</li>
-                        <li>Inglés (nivel medio) y Lengua de Signos Española (avanzado)</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="timeline-item" id="experiencia">
-                <div class="timeline-icon">
-                    <i class="ri-building-4-line"></i>
-                </div>
-                <div class="timeline-content left">
-                    <h2 class="timeline-title"><i class="ri-briefcase-4-line"></i>Experiencia Profesional Destacada</h2>
-                    
-                    <h3 class="timeline-subtitle">Área Cultural y Museográfica</h3>
-                    <ul class="timeline-text">
-                        <li>Relaciones públicas y coordinadora de proyectos en Hilos Patrimoniales – UVA Segovia</li>
-                        <li>Participación en montajes museográficos en España y Francia junto a Carmen Luccini</li>
-                        <li>Atención en sala y recepción de visitantes en Museo de Segovia y Museo Zuloaga</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="ri-book-open-line"></i>
-                </div>
-                <div class="timeline-content right">
-                    <h3 class="timeline-subtitle">Área Docente y Formación</h3>
-                    <ul class="timeline-text">
-                        <li>Formadora oficial para PYMEs en Cámaras de Comercio de Castilla y León</li>
-                        <li>Profesora en UFV (Francisco de Vitoria): FP2 Comercio y Marketing (presencial, dual y online)</li>
-                        <li>Asignaturas: Organización de eventos, Escaparatismo, Atención al cliente</li>
-                        <li>Tutora de TFGs en áreas de ventas y espacios comerciales</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="ri-store-2-line"></i>
-                </div>
-                <div class="timeline-content left">
-                    <h3 class="timeline-subtitle">Área Retail y Visual Merchandising</h3>
-                    <ul class="timeline-text">
-                        <li>Coordinadora de Retail en Las Rozas Village (2000–2009)</li>
-                        <li>Experiencia con marcas como Antonio Pernas, Pepe Jeans, H&M y Guess</li>
-                        <li>Responsable de escaparatismo, expansión y formación de equipos en España y Europa</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="ri-mental-health-line"></i>
-                </div>
-                <div class="timeline-content right">
-                    <h3 class="timeline-subtitle">Área Bienestar y Desarrollo Personal</h3>
-                    <ul class="timeline-text">
-                        <li>Profesora de Yoga y Meditación desde 2009</li>
-                        <li>Creadora de retiros en la naturaleza y experiencias de baños de bosque</li>
-                        <li>Aplicación de Mindfulness en empresas como MAPFRE y Mercedes Benz</li>
-                        <li>Consultas individuales de reflexología y programas de alimentación saludable</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="timeline-item" id="habilidades">
-                <div class="timeline-icon">
-                    <i class="ri-lightbulb-line"></i>
-                </div>
-                <div class="timeline-content left">
-                    <h2 class="timeline-title"><i class="ri-lightbulb-flash-line"></i>Habilidades Clave</h2>
-                    <div class="skill-list">
-                        <span class="skill-tag">Coordinación de equipos y liderazgo creativo</span>
-                        <span class="skill-tag">Resolución de conflictos desde enfoques integrativos</span>
-                        <span class="skill-tag">Diseño de experiencias formativas y sensoriales</span>
-                        <span class="skill-tag">Visión estratégica en entornos educativos y corporativos</span>
-                        <span class="skill-tag">Gestión del tiempo, polivalencia, y orientación al cambio</span>
-                        <span class="skill-tag">Alta sensibilidad estética, emocional y comunicativa</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="timeline-item" id="estilo">
-                <div class="timeline-icon">
-                    <i class="ri-plant-line"></i>
-                </div>
-                <div class="timeline-content right">
-                    <h2 class="timeline-title"><i class="ri-leaf-line"></i>Estilo Personal</h2>
-                    <p class="timeline-text">
-                        Versátil, entusiasta, cercana.<br>
-                        Amante del arte, los viajes, el silencio con sentido y la vida saludable.<br>
-                        Cree en el poder de la pausa, en la fuerza del cuidado y en el potencial de las personas cuando se les acompaña con presencia.
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="quote-section">
-            <p class="quote">Serenidad creativa para entornos que desean prosperar con alma.</p>
-            
-            <div class="social-links">
-                <a href="https://instagram.com/yogalasdeliciasdelola" target="_blank">
-                    <i class="ri-instagram-line"></i>
-                    <span>@yogalasdeliciasdelola</span>
-                </a>
-            </div>
-        </div>
-        
-        <footer>
-            <p>© 2023 Lola Villalba - Todos los derechos reservados</p>
-        </footer>
+
+<header>
+  <h1>Lola Villalba</h1>
+  <p>Serenidad creativa para entornos que desean prosperar con alma</p>
+</header>
+
+<section class="section">
+  <h2>Perfil Profesional</h2>
+  <p>
+    Profesional polifacética con más de 20 años de experiencia en turismo, marketing, docencia, museografía y bienestar integral. 
+    Combina visión creativa y estratégica con orientación al desarrollo humano y empresarial. 
+    Apasionada de la innovación serena, equipos eficientes y el arte de crear impacto desde la calma.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Formación Académica</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>2025 · Técnico en Promoción Turística y Promoción Local</h3>
     </div>
+    <div class="timeline-item">
+      <h3>2015 · Certificación en Coaching Social – Universidad San Pablo CEU</h3>
+    </div>
+    <div class="timeline-item">
+      <h3>Especializaciones:</h3>
+      <ul>
+        <li>Museografía aplicada (Carmen Luccini)</li>
+        <li>Profesora de Yoga y Meditación</li>
+        <li>Reflexología Podal y Alimentación Consciente</li>
+        <li>Mindfulness para empresas y entornos educativos</li>
+        <li>Inglés (nivel medio) y Lengua de Signos Española (avanzado)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Experiencia Profesional</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Área Cultural y Museográfica</h3>
+      <ul>
+        <li>Relaciones públicas y coordinadora de proyectos en Hilos Patrimoniales – UVA Segovia</li>
+        <li>Montajes museográficos junto a Carmen Luccini</li>
+        <li>Atención en sala en Museo de Segovia y Zuloaga</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>Área Docente y Formación</h3>
+      <ul>
+        <li>Formadora oficial para PYMEs (Cámaras de Comercio de Castilla y León)</li>
+        <li>Profesora en UFV: FP2 Comercio y Marketing</li>
+        <li>Asignaturas: Eventos, Escaparatismo, Atención al cliente</li>
+        <li>Tutora de TFGs en ventas y espacios comerciales</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>Área Retail y Visual Merchandising</h3>
+      <ul>
+        <li>Coordinadora de Retail en Las Rozas Village (2000–2009)</li>
+        <li>Experiencia con Antonio Pernas, Pepe Jeans, H&M, Guess</li>
+        <li>Responsable de escaparatismo y formación de equipos</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>Área Bienestar y Desarrollo Personal</h3>
+      <ul>
+        <li>Profesora de Yoga y Meditación desde 2009</li>
+        <li>Retiros en la naturaleza, baños de bosque</li>
+        <li>Mindfulness para MAPFRE, Mercedes Benz</li>
+        <li>Consultas individuales de reflexología</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section skills">
+  <h2>Habilidades Clave</h2>
+  <ul>
+    <li>Coordinación de equipos y liderazgo creativo</li>
+    <li>Resolución de conflictos con enfoque integrativo</li>
+    <li>Diseño de experiencias formativas y sensoriales</li>
+    <li>Gestión del tiempo, polivalencia, visión estratégica</li>
+    <li>Alta sensibilidad estética, emocional y comunicativa</li>
+  </ul>
+</section>
+
+<section class="section contact">
+  <h2>Contacto</h2>
+  <p>📧 lolavillalba.ufv@gmail.com</p>
+  <p>📞 656 948 470</p>
+  <p>🌍 Castilla y León, España</p>
+  <p>Instagram · <strong>@yogalasdeliciasdelola</strong></p>
+</section>
+
+<section class="section quote">
+  <blockquote>
+    “Serenidad creativa para entornos que desean prosperar con alma.”
+  </blockquote>
+</section>
+
+<footer>
+  &copy; 2025 Lola Villalba · Desarrollado con alma y estrategia.
+</footer>
+
 </body>
 </html>
+
+
